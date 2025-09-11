@@ -6,8 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Green Earth</title>
   <link rel="shortcut icon" href="./assets/plant.png" type="image/x-icon">
-  <!-- tailwindCSS CDN -->
-  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   <!-- css -->
   <link rel="stylesheet" href="./style/style.css">
   <!-- daisyUI cdn -->
@@ -62,10 +60,10 @@
     <h2 class="text-center font-semibold text-[32px] mb-8">Choose Your Trees</h2>
 
     <!-- plant section -->
-    <div class="w-14/15 m-auto grid grid-cols-15">
+    <div class="w-14/15 m-auto grid grid-cols-15 gap-4 max-sm:flex max-sm:flex-col">
       <!-- Categories section -->
 
-      <div id="Categories-area" class="col-span-3 ">
+      <div id="Categories-area" class="col-span-3 max-sm:hidden">
         <h3 class="font-bold text-lg mb-5">Categories</h3>
 
         <div id="add-categories">
@@ -76,7 +74,7 @@
       </div>
 
       <!-- card section -->
-      <div id="card-area" class="col-span-9">
+      <div id="card-container" class="col-span-9">
 
         <div class="max-w-[300px] rounded-2xl p-4 shadow-lg">
           <!-- card image -->
@@ -222,8 +220,10 @@
   <footer class="text-center bg-[#14532d] p-4 text-white">
     <span><small>© 2025 Green Earth. All Rights Reserved.</small></span>
   </footer>
-
+  <!-- js file -->
   <script src="./script.js"></script>
+  <!-- tailwindCSS CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </body>
 
 </html>
