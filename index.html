@@ -61,11 +61,82 @@
   <section>
     <h2 class="text-center font-semibold text-[32px] mb-8">Choose Your Trees</h2>
 
-    <!-- card section -->
-    <div>
+    <!-- plant section -->
+    <div class="w-14/15 m-auto grid grid-cols-15">
+      <!-- Categories section -->
+
+      <div id="Categories-area" class="col-span-3 ">
+        <h3 class="font-bold text-lg mb-5">Categories</h3>
+
+        <div id="add-categories">
+          <span class="font-medium p-3 rounded-xl max-w-[250px] block hover:bg-[#15803d] hover:text-white">All
+            Trees</span>
+        </div>
+
+      </div>
+
+      <!-- card section -->
+      <div id="card-area" class="col-span-9">
+
+        <div class="max-w-[300px] rounded-2xl p-4 shadow-lg">
+          <!-- card image -->
+          <div><img src="" alt="">
+          </div>
+
+          <!-- title -->
+          <h2 class="text-[14px] font-semibold text-[#1f2937] mb-2">Mango Tree</h2>
+          <p class="text-[#1f2937] text-[12px] mb-2">A fast-growing tropical tree that produces delicious, juicy mangoes
+            during summer. Its dense green
+          </p>
+
+          <!-- price & categories -->
+          <div class="flex justify-between items-center mb-3">
+
+            <span class="bg-[#dcfce7] rounded-full text-[#15803d] text-[14px] font-medium px-[12px] py-[4px]">Fruit
+              Tree</span>
+            <p class="text-[14px] text-[#1f2937] font-bold">৳ <span>500</span></p>
+
+          </div>
+
+          <!-- add to cart button -->
+
+          <button
+            class=" bg-[#15803d] font-medium px-5 py-2 rounded-full w-full hover:cursor-pointer text-white hover:bg-[#1cac51]">
+            Donate Now
+          </button>
+        </div>
+
+      </div>
+
+      <!-- cart ssection -->
+      <div id="carts-area" class="col-span-3 ">
+        <h3 class="font-bold text-lg mb-5">Categories</h3>
+
+        <div id="add-plant-cart" class="p-5">
+          <div class="flex justify-between items-center">
+            <div>
+              <p>plant name</p>
+              <p class="text-[14px] text-[#1f2937] font-bold mt-3">৳ <span>500</span></p>
+            </div>
+            <p>❌</p>
+          </div>
+        </div>
+        <div>
+          <hr class="w-[90%] m-auto ">
+          <div class="flex justify-between items-center w-[95%] m-auto">
+            <p class="mt-4 font-bold text-lg">Total:</p>
+            <span class="font-bold">0</span>
+          </div>
+        </div>
+
+      </div>
 
     </div>
+
+
+
   </section>
+
 
   <!-- About the Campaign section area -->
   <section class="max-w-[1090px] mx-auto  ">
@@ -143,13 +214,16 @@
       <button
         class="bg-yellow-400 text-green-700 font-medium px-5 py-2 rounded-full w-full hover:bg-yellow-500  hover:cursor-pointer hover:text-white">
         Donate Now
-      </button </form>
+      </button>
+    </form>
 
   </section>
 
   <footer class="text-center bg-[#14532d] p-4 text-white">
     <span><small>© 2025 Green Earth. All Rights Reserved.</small></span>
   </footer>
+
+  <script src="./script.js"></script>
 </body>
 
 </html>
