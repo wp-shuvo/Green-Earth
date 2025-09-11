@@ -5,10 +5,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Green Earth</title>
+  <link rel="shortcut icon" href="./assets/plant.png" type="image/x-icon">
   <!-- tailwindCSS CDN -->
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   <!-- css -->
   <link rel="stylesheet" href="./style/style.css">
+  <!-- daisyUI cdn -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@5/themes.css" rel="stylesheet" type="text/css" />
 
 </head>
 
@@ -53,9 +56,15 @@
       <img src="./assets/hero-leaf2.png" alt="">
     </div>
   </section>
+
   <!-- Choose Your Trees Section -->
   <section>
     <h2 class="text-center font-semibold text-[32px] mb-8">Choose Your Trees</h2>
+
+    <!-- card section -->
+    <div>
+
+    </div>
   </section>
 
   <!-- About the Campaign section area -->
@@ -112,6 +121,35 @@
 
   </section>
 
+  <!-- Plant a Tree Today Section -->
+
+  <section class="bg-[#166534] py-[100px]">
+    <h3 class="text-white text-3xl font-semibold text-center mb-5">Plant a Tree Today</h3>
+
+    <form class="bg-[#15803d] p-[40px] max-w-[500px] rounded-xl m-auto shadow-[0px_4px_22px_0px_rgba(0,0,0,0.06)]">
+      <input type="text" placeholder="Your Name"
+        class="input block bg-white w-full font-medium mb-4 p-2 rounded-lg focus:ring-green-500" />
+      <input type="text" placeholder="Your Email"
+        class="input block bg-white w-full font-medium mb-4 p-2 rounded-lg focus:ring-green-500" />
+      <div class="w-full">
+        <select
+          class="w-full p-2 bg-white rounded-lg mb-4 focus:outline-none focus:ring-2 focus:ring-green-500 appearance-none">
+          <option selected disabled>Number of Trees</option>
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+        </select>
+      </div>
+      <button
+        class="bg-yellow-400 text-green-700 font-medium px-5 py-2 rounded-full w-full hover:bg-yellow-500  hover:cursor-pointer hover:text-white">
+        Donate Now
+      </button </form>
+
+  </section>
+
+  <footer class="text-center bg-[#14532d] p-4 text-white">
+    <span><small>© 2025 Green Earth. All Rights Reserved.</small></span>
+  </footer>
 </body>
 
 </html>
