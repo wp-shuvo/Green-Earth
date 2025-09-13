@@ -8,8 +8,6 @@
   <link rel="shortcut icon" href="./assets/plant.png" type="image/x-icon">
   <!-- css -->
   <link rel="stylesheet" href="./style/style.css">
-  <!-- daisyUI cdn -->
-  <link href="https://cdn.jsdelivr.net/npm/daisyui@5/themes.css" rel="stylesheet" type="text/css" />
 
 </head>
 
@@ -55,42 +53,56 @@
     </div>
   </section>
 
+
   <!-- Choose Your Trees Section -->
   <section>
     <h2 class="text-center font-semibold text-[32px] mb-8">Choose Your Trees</h2>
 
+    <!-- Spinner -->
+    <div id="loading-spinner" class="justify-center items-center py-10  hidden">
+      <div class="w-10 h-10 border-4 border-green-500 border-dashed rounded-full animate-spin"></div>
+    </div>
+
     <!-- plant section -->
-    <div class="w-14/15 m-auto grid grid-cols-15 gap-4 max-sm:flex max-sm:flex-col">
+    <div class="w-14/15 m-auto grid grid-cols-15 gap-4 max-sm:flex max-sm:flex-col max-md:flex max-md:flex-col">
       <!-- Categories section -->
 
-      <div id="Categories-area" class="col-span-3 max-sm:hidden">
-        <h3 class="font-bold text-lg mb-5">Categories</h3>
+      <div id="Categories-area" class="col-span-3">
+        <h3 class="font-bold text-lg mb-5 max-md:text-center">Categories</h3>
 
-        <ul class="list-none" id="add-categories">
+        <ul
+          class="list-none max-sm:flex max-sm:flex-wrap max-sm:justify-center max-sm:gap-2 max-md:flex max-md:flex-wrap max-md:gap-2"
+          id="add-categories">
           <span class="font-medium p-3 rounded-xl max-w-[250px] block hover:bg-[#15803d] hover:text-white">All
             Trees</span>
         </ul>
 
       </div>
 
+
       <!-- card section -->
-      <div id="card-container" class="col-span-9 grid grid-cols-3 mb-[50px]">
+      <div id="card-container"
+        class="col-span-9 grid grid-cols-3 mb-[50px] max-sm:grid-cols-1 max-sm:m-auto max-md:grid-cols-2 max-md:m-auto">
 
       </div>
 
       <!-- cart ssection -->
       <div id="carts-area" class="col-span-3 ">
-        <h3 class="font-bold text-lg mb-5">Categories</h3>
+        <h3 class="font-bold text-lg mb-5">Add To Cart</h3>
 
         <div id="add-plant-cart" class="p-5">
-          <div class="flex justify-between items-center">
+
+          <!-- <div class="flex justify-between items-center">
             <div>
               <p>plant name</p>
               <p class="text-[14px] text-[#1f2937] font-bold mt-3">৳ <span>500</span></p>
             </div>
             <p>❌</p>
-          </div>
+          </div> -->
+
         </div>
+
+
         <div>
           <hr class="w-[90%] m-auto ">
           <div class="flex justify-between items-center w-[95%] m-auto">
@@ -192,10 +204,13 @@
   <footer class="text-center bg-[#14532d] p-4 text-white">
     <span><small>© 2025 Green Earth. All Rights Reserved.</small></span>
   </footer>
+
   <!-- js file -->
   <script src="./script.js"></script>
   <!-- tailwindCSS CDN -->
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <!-- DaisyUI CDN (must be after Tailwind) -->
+  <script src="https://cdn.jsdelivr.net/npm/daisyui@3.8.0"></script>
 </body>
 
 </html>
